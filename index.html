@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            margin: auto;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            height: 25px;
+            width: 80vw;
+            border: 2px solid red;
+            background-image: linear-gradient(to right, red 3%, rgb(67, 223, 67) 20% , yellow );
+            text-decoration: underline;
+            font-stretch: extra-expanded;
+        }
+        .nav{
+            font-size: 12px;
+            height: 62px;
+            width: 50vw;
+            border: 5px solid red;
+            border-radius: 15px;
+            background-color: rgb(162, 179, 231);
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        ul{
+            font-size: 17px;
+            margin-left: -42px;
+            margin-top: 3px;
+        }
+        ul:hover{
+            cursor: pointer;
+        }
+        .cont1{
+            margin: auto;
+            margin-top: 30px;
+            border: 5px solid green;
+            border-radius: 20px;
+            height: 211px;
+            width: 80vw;
+            background-color: rgb(144, 197, 162);
+        }
+        .c1box1{
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 19px;
+            height: 90px;
+            width: 350px;
+            border: 2px solid rgb(73, 141, 73);
+            border-radius: 5px;
+            background-color: rgb(94, 206, 235);
+            transition: transform 2s 2s;
+        }
+        .c1box1:hover{
+            transform: rotate(1turn);
+        }
+        .c1box2{
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 118px;
+            height: 90px;
+            width: 350px;
+            border: 2px solid rgb(73, 141, 73);
+            border-radius: 5px;
+            background-color: rgb(94, 206, 235);
+            transition: transform 2s 2s;
+        }
+        .c1box2:hover{
+            transform: rotate(1turn);
+        }
+        .c1box3{
+            font-size: 17px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 141px;
+            height: 90px;
+            width: 350px;
+            border: 2px solid rgb(73, 141, 73);
+            border-radius: 5px;
+            background-color: rgb(94, 206, 235);
+            transition: transform 2s 2s;
+        }
+        .c1box3:hover{
+            transform: rotate(1turn);
+        }
+        .c1box4{
+            font-size: 17px;
+            display: inline-block;
+            margin-top: -4px;
+            margin-left: 494px;
+            height: 90px;
+            width: 350px;
+            border: 2px solid rgb(73, 141, 73);
+            border-radius: 5px;
+            background-color: rgb(94, 206, 235);
+            transition: transform 2s 2s;
+        }
+        .c1box4:hover{
+            transform: rotate(1turn);
+        }
+        .box2{
+            text-decoration: underline;
+            letter-spacing: 5px;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;
+            height: 29px;
+            width: 80vw;
+            border: 2px solid red;
+            background-image: linear-gradient(to right, rgb(235, 146, 146) , rgb(67, 223, 67) , yellow );
+            text-decoration: underline;
+            font-stretch: extra-expanded;
+            transition: transform 2s;
+        }
+        .box2:hover{
+            transform: rotateY(180deg);
+        }
+        .cont2{
+            display: flex;
+            border: 3px solid rgb(7, 63, 7);
+            justify-content: space-around;
+            align-items: center;
+            height: 250px;
+            width: 80vw;
+            background-image: radial-gradient( blue 200px 300px, rgb(124, 124, 226) 500px 600px, green);
+            margin: auto;
+            margin-top: 25px;
+        }
+        .c2text{
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .c2box1{
+            /* margin-left: 20px; */
+            height: 180px;
+            width: 180px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: yellow;
+            transition: transform 2s;
+        }
+        .c2box1:hover{
+            transform: scale(1.5);
+        }
+        .c2box2{
+            /* margin-left: 20px; */
+            height: 180px;
+            width: 180px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: yellow;
+            transition: transform 2s;
+        }
+        .c2box2:hover{
+            transform: scale(1.5);
+        }
+        .c2box3{
+            /* margin-left: 20px; */
+            height: 180px;
+            width: 180px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: yellow;
+            transition: transform 2s;
+        }
+        .c2box3:hover{
+            transform: scale(1.5);
+        }
+        .c2box4{
+            /* margin-left: 20px; */
+            height: 180px;
+            width: 180px;
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: yellow;
+            transition: transform 2s;
+        }
+        .c2box4:hover{
+            transform: scale(1.5);
+        }
+        .contgrid{
+            margin: auto;
+            margin-top: 20px;
+            /* border: 3px solid red; */
+            height: 481px;
+            width: 80vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 100px;
+            grid-template-rows: 60px 100px 200px 60px;
+            grid-gap: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box1">OUR OFFERINGs</div>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>Review us</li>
+        </ul>
+    </div>
+    <div class="cont1">
+        <div class="c1box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium illum voluptatibus sint animi doloremque ipsa a ut deserunt! Ullam.</div>
+        <div class="c1box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio saepe quos iusto voluptates, laudantium in eligendi rem et blanditiis error!</div>
+        <div class="c1box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur magnam deserunt in voluptas praesentium architecto eaque repudiandae quibusdam dolores.</div>
+        <div class="c1box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum fugit perferendis voluptatem at odio veritatis assumenda aspernatur atque velit!</div>
+    </div>
+    <div class="box2">OUR TOP PERFORMER IN JEE ADVANCE</div>
+    <div class="cont2">
+        <div class="c2text c2box1">AKASH GUPTA <br> <br> 213/300 <br> <br> GOT IIT BOMBAY </div>
+        <div class="c2text c2box2">RISHAV <br> <br> 203/300 <br> <br> GOT DELHI</div>
+        <div class="c2text c2box3">Gaurav raj <br> <br> 192/300 <br> <br> GOT IIT ROORKEE</div>
+        <div class="c2text c2box4">Shivam Chouhan <br> <br> 176/300 <br> <br> GOT IIT KANPUR</div>
+    </div>
+    
+    <div class="contgrid">
+        <div style="grid-column-start: 1; grid-column-end: 5; background-color: tomato; text-align: center; font-size: 31px; padding-top: 11px; font-weight: 900;">THE BEST PLACE FOR THE BEST CAREER</div>
+        <div style="background-color: turquoise; grid-row-start: 2; text-align: center; font-size: 31px; padding-top: 11px; font-weight: 900; color: white;">You can ask about doubt in our doubt section</div>
+        <div style="background-color: burlywood; grid-row-start: 2; text-align: center; font-size: 31px; padding-top: 11px; font-weight: 900; color: rgb(126, 48, 34);">Get 30% Off by applying code</div>
+        <div style="background-color: rgb(71, 21, 12); grid-row-start: 2; text-align: center; font-size: 23px; padding-top: 11px; font-weight: 900; color: wheat;">We assure that your hard work & our teachin will give bright result</div>
+        <div style="background-color: black; grid-row-start: 2; grid-row-end: 4; color: whitesmoke; text-align: center; font-size: 17px; padding-top: 5px; font-weight: 900;">1. study Material <hr> 2. Tests <hr> 3. Doubt Mentors <hr> 4. Lectures <hr> 5. Our Subscription <hr> 6. Our Faculty <hr></div>
+        <div style="background-color: violet; grid-row-start: 3; grid-column-start: 1; grid-column-end: 4; text-align: justify; font-size: 31px; padding-top: 11px; font-weight: 900;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur sed vero impedit, nesciunt fuga, quae, nihil unde architecto corporis harum numquam eum alias! Exercitationem ut laboriosam asperiores voluptatum! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+        <div style="background-color: chartreuse; grid-column-start: 1; grid-column-end: 5; text-align: center; font-size: 31px; padding-top: 11px; font-weight: 900;">ALL THE BEST !</div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- display:grid;
+grid-template-rows: 60 px 100 px 200 px 60 px;
+grid-template-columns: repeat(3,1fr) 100 px;
+grid-gap:20px; -->
